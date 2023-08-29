@@ -95,7 +95,7 @@ clear
 TERM_WIDTH=$(tput cols)
 
 # Calculate the padding for the message
-MESSAGE="Welcome to my Arch-Hyprland-V3 Installer"
+MESSAGE="Welcome to my Arch-Hyprland-V3.5 Installer"
 PAD_LENGTH=$(( ($TERM_WIDTH - ${#MESSAGE}) / 2 ))
 
 # Set the color to green
@@ -564,7 +564,7 @@ fi
 clear
 
 # XDPH
-printf "${YELLOW} Kindly note XDPH only needed for screencast/screenshot. Hyprland will still work hence this is optional\n"
+printf "${YELLOW} Kindly note XDPH is only needed for screencast/screenshot. Hyprland will still work hence this is optional\n"
 printf "\n"
 read -n1 -rep "${CAT} Would you like to install XDG-Portal-Hyprland? (y/n)" XDPH
 if [[ $XDPH =~ ^[Yy]$ ]]; then
